@@ -1,0 +1,18 @@
+/* universal selector - must be added to ALL css */
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 1.6; */
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #cc0000; /*BU red*/
+    color: white;
+    text-align: center;
+    padding: 2% 1%;
+}
