@@ -16,17 +16,23 @@ header {
     padding: 5%;
 }
 
-nav ul {
+/* nav */
+nav ul{
+    padding-left: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
 
-nav a {
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
     display: block;
-    padding: 1rem 1.5rem;
-    color: black;
     text-decoration: none;
+    color: black;
+    padding: 1rem 1.5rem;
 }
 
 nav a:hover {
