@@ -39,6 +39,8 @@ main {
     padding: 1.5rem;
     background-color: white;
     border-radius: 6px;
+
+    height: 100vh; /*so content actually reaches bottom of page*/
 }
 
 footer {
