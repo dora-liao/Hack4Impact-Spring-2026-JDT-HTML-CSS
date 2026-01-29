@@ -44,9 +44,9 @@ nav a:hover {
 }
 
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1.5rem;
+    max-width: 80vw;
+    text-align: center;
+    padding: 2%;
     background-color: white;
     border-radius: 6px;
 
