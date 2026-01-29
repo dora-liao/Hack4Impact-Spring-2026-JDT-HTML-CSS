@@ -6,7 +6,8 @@
 
 body{
     /* use calc() for font for better content scaling */
-    font: calc(2px + 1.2vw) Georgia, serif; 
+    /* 1px = base size, 1.2vw = scales with the viewport width */
+    font: calc(1px + 0.8vw) Arial, Helvetica, sans-serif; 
     background-color: #e9e6e6dd;
     width: 100%;
     margin: 0 auto;
