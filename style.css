@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
-    /* use calc() for font for better content scaling */
+body {
+    /* use calc() for font for better page scaling */
     font: calc(2px + 1.2vw) Georgia, serif; 
     background-color: #e9e6e6dd;
     width: 100%;
-    margin: 0 auto;
     text-align: center;
 }
 
@@ -21,47 +20,39 @@ header {
     padding: 5%;
 }
 
-
 /* nav */
 nav{
-    margin: 1%;
+    margin: 2%;
 }
 
 nav ul{
     padding-left: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+    list-style: none; 
 }
 
 nav ul li{
     display: inline;
+    margin: 1%;
 }
 
 nav ul li a{
-    display: block;
     text-decoration: none;
     color: black;
-    padding: 1rem 1.5rem;
+    padding: 1.5% 3%;
 }
 
 nav a:hover {
-    background-color: white;
+    background-color: pink;
 }
+
 
 /* main */
-main{
-    /* use vw for better scaling */
-    max-width: 80vw; 
-    margin: 2% auto;
-    padding: 1.5%;
+main {
+    max-width: 80vw;
+    text-align: center;
+    padding: 2%;
     background-color: white;
     border-radius: 6px;
-}
-
-main h2{
-    padding-top: 4%;
-    color: #cc0000;;
 }
 
 main img{
@@ -69,16 +60,31 @@ main img{
     margin: 3%;
 }
 
+#home-img{
+    border: 5px dashed #cc0000;
+}
+
+.run-fencing{
+    max-width: 30vw;
+}
+
 .course-descriptions{
     width: 80%;
-    margin-top: 1%;
+    color: #cc0000;
+    margin-top: 2%;
+}
+
+h2{
+    padding-top: 2%;
+    color: black;
+}
+
+h3{
+    padding-top: 2%;
 }
 
 /* footer */
 footer {
     text-align: center;
-    padding: 1rem;
-    background-color: #eee;
-    font-size: 0.9rem;
-    margin-top: 2rem;
+    margin: 2%;
 }
