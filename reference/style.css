@@ -48,11 +48,18 @@ nav a:hover {
 
 /* main */
 main {
+    position: relative;
     max-width: 80vw;
     text-align: center;
     padding: 2%;
-    background-color: white;
     border-radius: 6px;
+    
+    background-image: url("../src/drakemaye.png");
+    background-repeat: repeat;
+    opacity: 0.6;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
 }
 
 main img{
@@ -66,6 +73,30 @@ main img{
 
 .run-fencing{
     max-width: 30vw;
+}
+
+.multi-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.clubs-2-col{
+    width: 50%;
+}
+
+.clubs-2-col img{
+    max-width: 30vw;
+}
+
+.clubs-3-col{
+    width: 33%;
+}
+
+.clubs-3-col img{
+    max-width: 20vw;
 }
 
 .course-descriptions{
@@ -87,4 +118,15 @@ h3{
 footer {
     text-align: center;
     margin: 2%;
+}
+
+/* media queries - changes page layout when page size changes */
+@media screen and (max-width: 1000px){
+    .multi-column{
+        flex-direction: column;
+    }
+
+    .multi-column img{
+        max-width: 30vw;
+    }
 }
