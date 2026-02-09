@@ -1,0 +1,42 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body{
+    font: calc(2px + 1.2vw) Georgia, serif;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+header{
+    background-color: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+
+nav{
+    margin: 2%;
+}
+
+nav ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    margin: 1%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 1.5% 3%;
+}
+
+nav a:hover{
+    background-color: pink;
+}
