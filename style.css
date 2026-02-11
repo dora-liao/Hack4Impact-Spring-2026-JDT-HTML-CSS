@@ -40,3 +40,73 @@ nav ul li a{
 nav a:hover{
     background-color: pink;
 }
+
+main {
+    max-width: 80vw;
+    text-align: center;
+    padding: 2%;
+    border-radius: 6px;
+
+    background-image: url("./src/drakemaye.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+main img{
+    max-width: 50vw;
+    margin: 3%;
+    border-style: solid;
+}
+
+#home-img{
+    border: 5px dashed #cc0000;
+}
+
+.run-fencing{
+    max-width: 30vw;
+}
+
+.multi-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.clubs-2-col{
+    width: 50%;
+}
+
+.clubs-2-col img{
+    max-width: 30vw;
+}
+
+.clubs-3-col{
+    width: 33%;
+}
+
+.clubs-3-col img{
+    max-width: 20vw;
+}
+
+h2{
+    padding-top: 2%;
+    color: black;
+}
+
+footer{
+    margin: 2%;
+}
+
+@media screen and (max-width: 1000px){
+    .multi-column{
+        flex-direction: column;
+    }
+
+    .multi-column img{
+        max-width: 30vw;
+    }
+}

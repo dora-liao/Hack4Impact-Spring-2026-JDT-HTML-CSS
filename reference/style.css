@@ -54,9 +54,10 @@ main {
     padding: 2%;
     border-radius: 6px;
     
+    /* last */
     background-image: url("../src/drakemaye.png");
     background-repeat: repeat;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
     /* background-position: center; */
