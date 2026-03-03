@@ -1,23 +1,7 @@
+//--CHANGE BACKGROUND COLOR--
+
 // Select button by accessing the DOM
 const colorBtn = document.getElementById("color-btn");
-const ratingInput = document.getElementById("rating-input");
-const submitRating = document.getElementById("submit-rating");
-const ratingMessage = document.getElementById("rating-message");
-
-// store ratings in an array
-let ratings = [];
-
-// add content with innerHTML
-const diningHallsMain = document.getElementById("dining-main");
-// Using innerHTML means that any JavaScript references to the descendants of element will be removed.
-// When you use insertAdjacentHTML, adding additional content will not corrupt
-// the existing JS references and the existing nodes are not altered.
-diningHallsMain.insertAdjacentHTML(
-  "beforeend",
-  `<h2>DISCLAIMER!</h2>
-   <p>These ideas are our own. Plz don't be mad BU.</p>`
-);
-diningHallsMain.style.color = "white";
 
 // changes background color of home'
 function colorToggle(){
@@ -29,7 +13,15 @@ function colorToggle(){
 }
 
 // add event listener
-colorBtn.addEventListener("click", colorToggle);
+//colorBtn.addEventListener("click", colorToggle);
+
+// --RATING INPUT--
+const ratingInput = document.getElementById("rating-input");
+const submitRating = document.getElementById("submit-rating");
+const ratingMessage = document.getElementById("rating-message");
+
+// store ratings in an array
+let ratings = [];
 
 // events related to rating submission
 submitRating.addEventListener("click", function() {
@@ -75,3 +67,19 @@ showRatingsBtn.addEventListener("click", function() {
     }
 
 });
+
+//--ADD A DISCLAIMER--
+// add content with insertAdjacentHTML
+const diningHallsMain = document.getElementById("dining-main");
+// Using innerHTML here means that any JavaScript references to the descendants of element will be removed.
+// When you use insertAdjacentHTML, adding additional content will not corrupt
+// the existing JS references and the existing nodes are not altered.
+
+//insertAdjacentHTML = inserting HTML code into a specified position
+diningHallsMain.insertAdjacentHTML(
+  "beforeend", //beforeend = before the end of the last element
+  `<h2>DISCLAIMER!</h2>
+   <p>These ideas are our own. Plz don't be mad BU.</p>`
+); 
+
+diningHallsMain.style.color = "white";
