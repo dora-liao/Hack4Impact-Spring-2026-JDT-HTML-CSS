@@ -22,7 +22,7 @@
             </ul>
         </nav>
 
-        <main>
+        <main id = "dining-main">
             <h2>Our review of dining halls</h2>
 
             <h3><a href ="https://www.bu.edu/dining/location/warren/" target = "_blank">Warren</a></h3>
@@ -37,8 +37,20 @@
 
             <h3><a href = "https://www.bu.edu/dining/location/fenway/" target = "_blank">Fenway</a></h3>
             <p>too far</p>
+
+            <h3>Rate BU Dining 1-5</h3>
+            <input type="text" id="rating-input" placeholder="Enter a number 1-5">
+            <button id="submit-rating">Submit Rating</button>
+            <p id="rating-message"></p>
+
+            <button onclick = "colorToggle()" id = "color-btn">Change Background Color</button>
+
+            <button id="show-ratings">Print Ratings to Console</button>;
+
         </main>
         
         <footer>&copy; 2026 Made with blood, sweat, and tears by Dora and Wynn.</footer>
+    
+        <script src = "app.js"></script>
     </body>
 </html>
